@@ -1,0 +1,160 @@
+/*************************** Calendar Top Navigation **************************/
+#calendar {
+  margin: 0px auto;
+  margin-top: 30px;
+  width: 602px;
+  font-family: Helvetica, "Times New Roman", Times, serif;
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+}
+#calendar .calendar_box {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #FE9600;
+  border-radius: 10px 10px 0px 0px;
+}
+#calendar .calendar_header {
+  line-height: 40px;  
+  vertical-align: middle;
+  position: absolute;
+  left: 11px;
+  top: 0px;
+  width: 582px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+#calendar .calendar_header .calendar_prev, #calendar .calendar_header .calendar_next {
+  position: absolute;
+  top: 0px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+}
+#calendar .calendar_header .calendar_title {
+  color: #FFF;
+  font-size: 18px;
+}
+#calendar .calendar_header .calendar_prev {
+  left: 0px;
+}
+#calendar .calendar_header .calendar_next {
+  right: 0px;
+}
+/*************************** Calendar Content Cells ***************************/
+#calendar .calendar_content {
+  border: 1px solid #FE9600;
+  border-top: none;  
+  border-radius: 0px 0px 10px 10px;
+}
+#calendar .calendar_label {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#calendar .calendar_label .calendar_names {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 5px;
+  float: left;
+  list-style-type: none;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+  font-size: 25px;
+  background-color: transparent;
+  font-weight: bold;
+}
+#calendar .calendar_dates {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+/** overall width = width+padding-right **/
+#calendar .calendar_dates .calendar_names, #calendar .calendar_dates .calendar_days, #calendar .calendar_dates .calendar_today, #calendar .calendar_dates .calendar_event{
+  margin: 0px;
+  padding: 0px;
+  margin-right: 5px;
+  margin-top: 5px;
+  line-height: 60px;
+  vertical-align: middle;
+  float: left;
+  list-style-type: none;
+  width: 80px;
+  height: 60px;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  border-radius: 50px;
+}
+#calendar .calendar_dates .calendar_today {
+  font-weight: 900;
+  /*border: 1px solid #fed599;*/
+}
+:focus {
+  outline: none;
+}
+
+#calendar .calendar_dates .calendar_event {
+  background-color: #fed599;
+}
+:focus {
+  outline: none;
+}
+
+.calendar_clear {
+  clear: both;
+}
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 40%;
+height: 250px;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
